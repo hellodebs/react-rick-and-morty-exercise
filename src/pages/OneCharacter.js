@@ -12,7 +12,6 @@ export default function OneCharacter() {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setCharacter(data);
       });
   }, [characterId]);
